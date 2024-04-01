@@ -53,6 +53,7 @@
     elseif (%idle.stamp = 103) { echo 13 Stamp: Crystallin }
     elseif (%idle.stamp = 106) { echo 13 Stamp: Potion }
     elseif (%idle.stamp = 111) { echo 13 Stamp: Vendor }
+    elseif (%idle.stamp = 114) { echo 13 Stamp: Talent II }
     else { goto idle.stamp.reroll }
   }
   if (%idle.fund = 5) {
