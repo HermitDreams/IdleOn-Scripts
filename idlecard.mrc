@@ -66,6 +66,8 @@
   elseif (%idle.card = 164) { echo 15 -s Card: Grandfrogger }
   elseif (%idle.card = 172) { echo 15 -s Card: Cactopunk }
   elseif (%idle.card = 177) { echo 15 -s Card: Ice Guard }
+  elseif (%idle.card = 181) { echo 14 -s Card: Baba Yaga }
+  elseif (%idle.card = 183) { echo 14 -s Card: Boop }
   elseif (%idle.card = 184) { echo 14 -s Card: Amarok }
   elseif (%idle.card = 189) { echo 14 -s Card: Efaunt }
   else { goto idle.card.reroll }
