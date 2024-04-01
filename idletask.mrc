@@ -62,5 +62,6 @@
   elseif (%idle.task = 47) { echo 15 -s Task: Boops }
   elseif (%idle.task = 48) { echo 11 -s Task: Frost Flakes }
   elseif (%idle.task = 49) { echo 5 -s Task: Sir Staches }
+  elseif (%idle.task = 50) { echo 11 -s Task: Bloques }
   else { goto idle.task.reroll }
 }
