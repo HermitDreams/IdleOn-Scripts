@@ -2,12 +2,16 @@
   var %idle.dung $rand(1,45)
   var %idle.colo $rand(1,150)
   var %idle.totm $rand(1,120)
+  var %idle.boss $rand(1,75)
   if (%idle.colo = 50) { echo 9 -s Task: W1 Colosseum }
   elseif (%idle.colo = 100) { echo 8 -s Task: W2 Colosseum }
   elseif (%idle.colo = 150) { echo 11 -s Task: W3 Colosseum }
   if (%idle.totm = 40) { echo 3 -s Worship: Goblin Gorfest }
   elseif (%idle.totm = 80) { echo 8 -s Worship: Wakawaka War }
   elseif (%idle.totm = 120) { echo 7 -s Worship: Nutto Worship }
+  if (%idle.boss = 25) { echo 14 -s Boss: Amarok }
+  elseif (%idle.boss = 50) { echo 5 -s Boss: Dr. Defecaus }
+  elseif (%idle.boss = 75) { echo 15 -s Boss: Efaunt }
   if (%idle.dung = 15) { echo 9 -s Task: W1 Dungeon }
   elseif (%idle.dung = 30) { echo 8 -s Task: W2 Dungeon }
   elseif (%idle.dung = 45) { echo 11 -s Task: W3 Dungeon }
@@ -58,10 +62,9 @@
   elseif (%idle.task = 43) { echo 6 -s Task: Snelbies }
   elseif (%idle.task = 44) { echo 8 -s Task: Sheepies }
   elseif (%idle.task = 45) { echo 11 -s Task: Tundra Logs }
-  elseif (%idle.task = 46) { echo 5 -s Task: Dr. Defecous }
-  elseif (%idle.task = 47) { echo 15 -s Task: Boops }
-  elseif (%idle.task = 48) { echo 11 -s Task: Frost Flakes }
-  elseif (%idle.task = 49) { echo 5 -s Task: Sir Staches }
-  elseif (%idle.task = 50) { echo 11 -s Task: Bloques }
+  elseif (%idle.task = 46) { echo 15 -s Task: Boops }
+  elseif (%idle.task = 47) { echo 11 -s Task: Frost Flakes }
+  elseif (%idle.task = 48) { echo 5 -s Task: Sir Staches }
+  elseif (%idle.task = 49) { echo 11 -s Task: Bloques }
   else { goto idle.task.reroll }
 }
