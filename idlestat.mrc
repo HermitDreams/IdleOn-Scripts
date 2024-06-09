@@ -54,7 +54,8 @@
 
   :idle.stat.loop
   echo 4 -s DEBUG: Points to assign: $eval($+(%,idle.stat.pts.,%idle.stat.curtab),2)
-  while ($eval($+(%,idle.stat.pts.,%idle.stat.curtab),2) > 0) {
+  while ($eval($+(%,idle.stat.pts.,%idle.stat.curtab),2) > 0) && ($eval($+(%,idle.stat.pts.,%idle.stat.curtab),2) isnum) {
+    ; echo 7 -s Evaluated as $eval($+(%,idle.stat.pts.,%idle.stat.curtab),2)
     if ($eval($+(%,idle.stat.pts.,%idle.stat.curtab),2) > 5) { set %idle.stat.max 5 }
     else { set %idle.stat.max $eval($+(%,idle.stat.pts.,%idle.stat.curtab),2) }
     var %idle.stat.roll $rand(1, $+ %idle.stat.max)
